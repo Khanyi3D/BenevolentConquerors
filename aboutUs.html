@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us-Benevolent Conquerors</title>
     <link rel="stylesheet" href="aboutUsStyle.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body id = "grad">
     
@@ -33,9 +35,12 @@
     </header>
     <body>    
         <main>
-            <section class="problem-statement">  
-                 <div class="box"> 
-                    <p>This organization was founded, due to a collective group of
+            <section class="about-section">  
+                 <div class="about-content ">
+                    
+                    <div class="about-text">
+                        <h2 class = section-heading>Our Story</h2>
+                        <p >This organization was founded, due to a collective group of
                         mothers who have observed their own sons frustrations and
                         anger, fueled by the injustices around them, that leads to
                         anger, rage and violence.
@@ -43,85 +48,90 @@
                         models, however we knew a lot of good men, who still held
                         up the principles of provision, protecting their families,
                         communities and country.
-                    </p>
+                        </p>
+                    
+                    </div>
+                    <div class="about-image">
+                        <img src="Meeting1.jpg" alt="Meeting" />
+                    </div>
                 </div>
-
-                <div class="box-img">
-                    <img src="Meeting1.jpg" alt="Meeting" />
-                   
-                </div>
-                <br>
-                <p class="page-fact">
-                    A Fact: <br>
-                    <span class="page-stat"> 68,3 % </span> <br>
+            </section>    
+            
+            <section class="about-section">
+                
+                    
+            <hr>       
+                <p class="section-stat">
+                    A fact:  <br>
+                    <span class="page-stat" id="stat-number"> 68,3 </span> <br>
                     of children grow up without a father in South Africa <sup>1</sup></p>
                 </p>
-                <hr class="section-divider">
-        </section>
-        
-
-    
-        <section  class="solution-statement">
-            <h2 class="section-heading">We are here to help</h2>
-           
-            <div class="content-wrapper">
-                
-                <div class="img-container">
-                    <img src="Hamper2.jpg" alt="Hamper2" />
-
                 </div>
+                </div>
+            <hr>
+            </section>
             
-                <div class="text-container">
-                         
-                     <p class="page-solution">With the help of our sons we identified urgent needs
-                        that we could address immediately, like providing
-                        toiletries, you might ask why toiletries. The lack of
-                        toothpaste, underwear, soap, deodorant and a face
-                        cloth are some of the causes that lead to small criminal
-                        acts such as shoplifting, theft and later a more serious
-                        crimes and violence.
-                        The main purpose of this group is to address the
-                        immediate need and then deal with more complex
-                        issues such as how to navigate life in this ever
-                        changing world.
-                    </p>
 
-                </div>
-                
-            </div>
-            <hr class="section-divider">
-        </section>
+            <section class="about-section">
+                <div class="about-content reverse"> 
+                   
+                    <div class="about-text">  
+                        <h2 class = section-heading>We Are Here To Help</h2>  
+                        
+                        <p>With the help of our sons we identified urgent needs
+                            that we could address immediately, like providing
+                            toiletries, you might ask why toiletries. The lack of
+                            toothpaste, underwear, soap, deodorant and a face
+                            cloth are some of the causes that lead to small criminal
+                            acts such as shoplifting, theft and later a more serious
+                            crimes and violence.
+                            The main purpose of this group is to address the
+                            immediate need and then deal with more complex
+                            issues such as how to navigate life in this ever
+                            changing world.</p>
+                    </div>
 
-
-        <section  class="purpose-statement">
-            <h2 class="purpose-heading">What we do </h2>
-        <div class="content-wrapper">
-            <div class="purpose-text">
-                <p class="purpose-solution">Every month we invite men to come and have difficult conversations
-                with the boys and provide guidance, we help mentor and counsel and
-                where we can we assist struggling families, specifically those that are
-                child headed.
-                With your help we can do more, we want to partner with you on the
-                following initiative we currently run</p>
-                <div class="Learn-Link">
-                    <a href="initiatives.html" class="section-link">Learn More</a>
-                </div>
-            </div>
-                <div class="image-container">
-                    <img src="Meeting2.jpg" alt="Meeting2" />
+                     <div class="about-image">
+                        <img src="Hamper2.jpg" alt="Hamper2" />
+                    </div>
                     
                 </div>
+            </section>
+        
 
-           
-        </div>
-        <hr class="ref-divider">
+
+        <section  class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class = section-heading>What we do </h2>
+                
+                    <p>Every month we invite men to come and have difficult conversations
+                    with the boys and provide guidance, we help mentor and counsel and
+                    where we can we assist struggling families, specifically those that are
+                    child headed.
+                    With your help we can do more, we want to partner with you on the
+                    following initiative we currently run</p>
+                    <div class="Learn-Link">
+                        <a href="initiatives.html" class="section-link">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="Meeting2.jpg" alt="Meeting2" />
+                </div>
+            </div>
         </section>
+                
+          
+      
+        <hr class="ref-divider">
+        
 
         <section class="referencing">
             <h4>References</h4>
             <p>
-                1.https://ewn.co.za/2021/02/25/stats-sa-almost-70-of-black-children-livewithout-
-                biological-dads-at-home
+                1. <a href="https://ewn.co.za/2021/02/25/stats-sa-almost-70-of-black-children-livewithout-
+                biological-dads-at-home" target="_blank"> Stats SA Report on Father Absence</a>
             </p>
         </section>
     </main>
@@ -134,6 +144,28 @@
         
         <p>Benevolent Conquerors Foundation is a registered non-profit No: 2024/783568/08 (registered in South Africa)</p>
     </footer>
+
+    <script>
+        const statNumber = document.getElementById("stat-number");
+        let count = 0;
+        const target = 68.3;
+        const speed = 50;
+
+        const updateNumber = () =>{
+            const increment = 0.5;
+            if(count < target){
+                count += increment;
+                statNumber.textContent = count.toFixed(1) + "%";
+                setTimeout(updateNumber,speed);
+            }
+
+            else{
+                statNumber.textContent = target + "%";
+            }
+        };
+
+        window.addEventListener("load", updateNumber);
+    </script>
 
     
 </body>

@@ -1,0 +1,10 @@
+.site-footer{
+  
+    background-image: linear-gradient(to left,
+   rgba(40, 188, 225, 0.6), rgba(51, 151, 176, 1));
+    color: white;
+    text-align: left;
+    padding: 1.5rem 5vw;
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
