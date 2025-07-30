@@ -88,16 +88,13 @@
 
  .about-section{
   padding: 0.5rem 0.5rem;
-  margin: 3rem;
+  margin: 1rem;
   margin-right: 3rem;
   display: flex;
   flex-direction: column;
   gap: 3rem
   ;
  }
-
-
-
 
 .about-section{
   padding: 1rem 2rem;
