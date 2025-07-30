@@ -34,9 +34,26 @@
             <p class = "site-slogan"> Conqueroring Together</p>
         </div>
         
-        <div class="boys-box">
-            <img src="BoysBags.jpg" alt="BoysBags" />
+    
+        <div class = "slideshow-section">
+       
+        <div class="slideshow-container">
+            
+                <div class="slide fade">
+                     <img src="BoysBags.jpg" alt="BoysBags" />
+                </div>
+                 <div class="slide fade">
+                     <img src="Mentors.JPG" alt="Mentors" />
+                </div>
+                 <div class="slide fade">
+                     <img src="Mentor.JPG" alt ="Mentor" />
+                </div>
+
+            
+           
         </div>
+        </div>
+   
     </header>
 
     <main class = "sections-container">
@@ -76,6 +93,23 @@
         
         <p>Benevolent Conquerors Foundation is a registered non-profit No: 2024/783568/08 (registered in South Africa)</p>
     </footer>
+
+    <script>
+       let slideIndex = 0;
+        showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide"); 
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 } 
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000);
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>
