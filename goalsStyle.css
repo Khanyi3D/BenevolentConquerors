@@ -16,6 +16,24 @@
     background-image: linear-gradient(to right,
      rgba(40, 188, 225, 0.6), rgba(51, 151, 176, 1));
   }
+
+  html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Wrapper with flexbox layout */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows to fill space */
+main {
+  flex: 1;
+}
+
   
   
 .page-header {

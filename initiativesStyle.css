@@ -17,20 +17,35 @@
      rgba(40, 188, 225, 0.6), rgba(51, 151, 176, 1));
   }
   
- 
-  
+ html, body {
+  height: 100%;
+  margin: 0;
+}
 
-  
- .page-header{
+/* Wrapper with flexbox layout */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows to fill space */
+main {
+  flex: 1;
+}
+
+.page-header{
   text-align: left;
   margin-bottom: 40px;
  }
 
- .page-title{
+.page-title{
   font-size: 4rem;
   margin-top: 20px;
   margin-left: 2rem;
  }
+
+
 
  .initiatives-container{
     display: flex;
@@ -38,17 +53,20 @@
     justify-content: center;
     gap: 2.5rem;
     padding: 2rem;
-    padding-bottom: 13.5rem;
+    padding-top: 5rem;
+    
  }
 
  .initiatives-card {
     background: #f9f9f9;
     border-radius: 10px;
     padding: 2rem;
-    width: 300px;
+    width: 500px;
+    height: 900px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    align-items: center;
   
  }
 
@@ -59,18 +77,20 @@
  .initiatives-card img {
     max-width: 100%;
     border-radius: 8px;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
+    
  }
 
- .initiatives-title{
-    font-size: 2rem;
-    margin:1rem 0 0.5rem;
+ .initiative-title{
+   font-size: 2rem;
+   padding-top: 1rem;
  }
 
  .initiative-description {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     text-align: justify;
+    padding-top: 1rem;
  }
 
  
