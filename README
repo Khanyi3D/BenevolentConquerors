@@ -1,0 +1,85 @@
+Benevolent Conquerors Foundation – Static Website
+
+A static website built with HTML, CSS, and JavaScript to showcase the mission, initiatives, and donation opportunities of the Benevolent Conquerors Foundation.
+
+ Overview
+
+This website serves as the digital home of our foundation. It provides:
+
+Information about our mission and goals.
+
+Details of our initiatives and community projects.
+
+A simple way for visitors to support us through donations (QR code and secure payment links).
+
+Contact details for reaching out to the foundation.
+
+Tech Stack
+
+Frontend: HTML, CSS, JavaScript
+
+Hosting: GitHub Pages
+
+
+Setup & Usage
+
+Clone this repository:
+
+git clone https://github.com/your-username/charity-website.git
+
+Navigate to the project folder:
+
+cd charity-website
+
+Open the project in your browser:
+
+start index.html 
+
+Alternatively, drag and drop index.html into your browser.
+
+Donations
+
+Visitors can support the foundation by:
+
+Scanning the donation QR code displayed on the site.
+
+Following secure payment links provided on the Contact & Donate page.
+
+Project Structure
+charity-website/
+│── index.html        # Homepage  
+│── about.html        # About Us page  
+│── initiatives.html  # Initiatives &Projects  
+│── contact.html      # Contact &Donation page 
+Images, QR codes,logos  
+│── index.css/         # Stylesheets  
+│── about.css/         # Stylesheets 
+│──  initiatives.css/  # Stylesheets 
+│── contact.css/       # Stylesheets 
+│── README.ME/         # Stylesheets
+│── scripts.js/        # JavaScript files  
+
+Deploy on GitHub Pages
+
+Push your code to a GitHub repository.
+
+Go to Settings > Pages.
+
+Under Source, select the branch (usually main) and root folder (/).
+
+Save and wait for GitHub Pages to build.
+
+Your site will be live at:
+
+https://your-username.github.io/charity-website/
+
+License
+
+This project is licensed under the MIT License
+
+Contact
+
+For questions or collaboration opportunities, reach out at:
+
+Email: foundation-email@example.com
+Website: https://your-domain.com
