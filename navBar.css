@@ -69,4 +69,52 @@
         left: 20px;
         width: 220px;
         z-index: 10;
+
+        transition: transform 0.4s ease, filter 0.4s ease;
+      }
+
+      .logo:hover{
+        transform: scale(1.08) rotate(1deg);
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+      }
+
+      .hamburger{
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+      }
+
+      @media (max-width:768px) {
+        .nav-list{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 100px;
+          right: 20px;
+          background: rgba(32,110,188,0.95);
+          padding: 20px;
+          border-radius: 10px;
+
+        }
+        
+        .hamburger{
+          display: block;
+          position: absolute;
+          top: 30px;
+          right: 30px;
+        }
+
+        .nav-list.open{
+          display: flex;
+        }
+
+        .logo{
+          height: 200px;
+          width: auto;
+          object-fit: contain;
+          aspect-ratio: auto;
+
+        }
+        
       }
