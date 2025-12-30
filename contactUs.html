@@ -18,7 +18,9 @@
         </div>
         
         <nav class="navbar">
-            
+              <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
             <ul class="nav-list">
                 
                 <li><a href="index.html">Home</a></li>
@@ -75,5 +77,12 @@
         <p>Benevolent Conquerors Foundation is a registered non-profit No: 2024/783568/08 (registered in South Africa)</p>
     </footer>
 </div>
+
+ <script>
+        function toggleMenu(){
+            const navList = document.querySelector(".nav-list");
+            navList.classList.toggle("open");
+        }
+    </script>
 </body>
 </html>
