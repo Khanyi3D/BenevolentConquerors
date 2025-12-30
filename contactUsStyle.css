@@ -1,5 +1,5 @@
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:"Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin:0;
     padding: 0;
@@ -42,57 +42,95 @@ main {
     font-size: 2.5rem;
 }
 
-.contact-info{
-    padding: 3rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align:center;
-    font-size: 1.5rem;
+.contact-info {
+  padding: 5rem 5vw;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.contact-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 2rem;
-    gap: 2rem;
-
-    align-items: center;
+.contact-info h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
 }
 
-.contact-details{
-    flex:1;
-    text-align: left;
-    font-size:1.8rem;  
-   
+.contact-info > p {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+}
+.contact-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.donation-info{
-    text-align: center;
-    padding: 50px 20px;
+/* LEFT CARD */
+.contact-details {
+  flex: 1;
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: left;
+  font-size: 1.4rem;
 }
 
-.donation-info h2
-{
-    font-size: 2rem;
-    margin-bottom: 10px;
-
+.contact-details p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
 }
 
-.qr-box{
-    margin: 20px;
-    width: 250px;
-    height: 250px;
+.donate-box {
+  flex: 1;
+  background: #f6fbfd;
+  padding: 3rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.donate-info {
+  padding: 4rem 5vw;
 }
 
-.qr-box img{
+.donate-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.donate-text {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.qr-box img {
+  width: 190px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.qr-note {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .contact-details,
+  .donate-box {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.qr-note{
-    margin-top: 10px;
-    font-size: 0.9 rem;
-    color: #555;
+    text-align: center;
+  }
 }
