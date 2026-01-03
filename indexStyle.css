@@ -34,12 +34,13 @@ main {
 
 
 .site-header{
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 5vw;
-  /*width: 100%;*/
+  background-color: #e6f7fa;
+
+  flex-wrap: nowrap;
   
   
   background-color: #e6f7fa;
@@ -58,6 +59,8 @@ main {
   color: #4d4d4d;
   margin-top: 0.3rem;
 }
+
+
 
 
    
@@ -139,6 +142,8 @@ main {
     position: relative;
     margin: auto;
     overflow: hidden;
+
+    
   
   }
 
@@ -167,6 +172,24 @@ main {
     
   }
 
+   .section-link {
+   display: inline-block;
+   margin-top: 1rem;
+   background-color: #28bce1;
+   padding: 0.5rem 1rem;
+   color: white;
+   
+   border-radius: 5px;
+   text-decoration: none;
+   font-weight: bold;
+  }
+
+  
+  section a.section-link:hover{
+    text-decoration: underline;
+  }
+  
+
  
   @media (max-width: 768px) {
     .site-header {
@@ -193,12 +216,14 @@ main {
     height: 160px;}
 
     .site-title {
-    font-size: clamp(2rem, 6vw, 3.5rem);
-    line-height: 1.2;
+       font-size: 3rem;
+      line-height: 1.1;
+      margin-bottom: 0.3rem;
     }
 
     .site-slogan {
-    font-size: clamp(1rem, 4vw, 1.3rem);
+    font-size: 1.1rem;
+    margin-top: 0;
     }
 
     .slideshow-container img {
@@ -216,23 +241,7 @@ main {
 }
   }
 
-  .section-link {
-   display: inline-block;
-   margin-top: 1rem;
-   background-color: #28bce1;
-   padding: 0.5rem 1rem;
-   color: white;
-   
-   border-radius: 5px;
-   text-decoration: none;
-   font-weight: bold;
-  }
-
-  
-  section a.section-link:hover{
-    text-decoration: underline;
-  }
-  
+ 
 
   
 
