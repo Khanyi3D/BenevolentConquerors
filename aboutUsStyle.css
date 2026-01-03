@@ -150,23 +150,43 @@
 
 
 @media (max-width:768px){
-  .about-section {
+  /* Stack image + text vertically */
+  .about-content,
+  .about-content.reverse {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Make text readable on small screens */
+  .about-text {
+    max-width: 100%;
+    font-size: 1.4rem;
     text-align: left;
   }
 
-  .section-heading {
-    font-size: 2rem;
-
-  }
-
-  .section-text {
+  /* Ensure images scale correctly */
+  .about-image {
     width: 100%;
   }
 
-  .about-image{
+  .about-image img {
     width: 100%;
     max-width: 100%;
+    height: auto;
+  }
+
+  /* Reduce heading size */
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  /* Reduce stat size */
+  .section-stat {
+    font-size: 1.8rem;
+  }
+
+  .page-stat {
+    font-size: 2.4rem;
   }
 }
 
