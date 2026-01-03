@@ -151,7 +151,8 @@
 
 @media (max-width:768px){
   .about-section {
-    padding: 2rem 1rem;
+    flex-direction: column;
+    text-align: left;
   }
 
   .section-heading {
@@ -160,7 +161,12 @@
   }
 
   .section-text {
-    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  .about-image{
+    width: 100%;
+    max-width: 100%;
   }
 }
 
