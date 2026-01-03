@@ -37,9 +37,9 @@ main {
     display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5vw;
+  padding: 1.5rem 1vw;
   background-color: #e6f7fa;
-
+  padding-top: 0rem;
   flex-wrap: nowrap;
   gap: 4rem;
   
@@ -130,7 +130,7 @@ main {
   }
 
   .slideshow-section{
-    
+    padding: 60px 0px;
     text-align: center;
   
     max-width: 80%;
@@ -143,8 +143,7 @@ main {
     position: relative;
     margin: auto;
     overflow: hidden;
-    padding-top: 5rem;
-
+    padding-top: 8rem;
     
   
   }
