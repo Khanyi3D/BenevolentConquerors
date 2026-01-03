@@ -34,13 +34,14 @@ main {
 
 
 .site-header{
-  display: flex;
+    display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  padding: 2rem 5vw;
   background-color: #e6f7fa;
 
   flex-wrap: nowrap;
+  gap: 4rem;
   
   
   /*border-bottom: 1px solid #ccc;*/
