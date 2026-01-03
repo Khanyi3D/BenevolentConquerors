@@ -41,7 +41,7 @@ main {
   background-color: #e6f7fa;
 
   flex-wrap: nowrap;
-  
+  gap: 4rem;
   
   background-color: #e6f7fa;
   /*border-bottom: 1px solid #ccc;*/
