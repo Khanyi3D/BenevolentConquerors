@@ -97,18 +97,33 @@ main {
     margin-top: 4rem;
   }
 
-  @media(max-width:768px){
-    .goal-box,
-    .goal-box.reverse{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .goal-img{
-        width: 100%;
-    }
-
-    .goal-text{
-        text-align: justify;
-    }
+  @media(max-width:768px) {
+    /* Stack image and text vertically */
+  .goal-content,
+  .goal-content.reverse {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  /* Images become full width */
+  .goal-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Text spans full width */
+  .goal-text {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .goal-text h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Reduce vertical crowding */
+  .goal-content {
+    margin-bottom: 3rem;
+  }
+}
