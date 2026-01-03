@@ -51,6 +51,7 @@ main {
   font-size: 5rem;
   line-height: 1.2;
   color:#2c3e50;
+  
 }
 
 .site-slogan
@@ -129,7 +130,7 @@ main {
   }
 
   .slideshow-section{
-    padding: 60px 20px;
+    
     text-align: center;
   
     max-width: 80%;
@@ -142,6 +143,7 @@ main {
     position: relative;
     margin: auto;
     overflow: hidden;
+    padding-top: 5rem;
 
     
   
