@@ -78,8 +78,19 @@ main {
     gap: 2rem;
     padding: 3rem 5vw;
     
-    
   }
+.sections-container section img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sections-container section p {
+  line-height: 1.5;
+  font-size: 0.95rem;
+  text-align: center;
+}
 
   section {
     /*flex: 1 2 250px;*/
@@ -158,21 +169,51 @@ main {
 
  
   @media (max-width: 768px) {
-    .site-header{
-      flex-direction: column;
-      text-align: center;
-
-    }
+    .site-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
 
     .site-header img{
       margin-top: 1rem;
 
     }
 
-    .sections-container {
-      flex-direction: column;
-      align-items: center;
+   .sections-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
     }
+
+    .sections-container section h2 {
+    font-size: 1.4rem;
+    }
+
+    .sections-container section img {
+    height: 160px;}
+
+    .site-title {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.2;
+    }
+
+    .site-slogan {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    }
+
+    .slideshow-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    }
+
+    .site-footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
   }
 
   .section-link {
