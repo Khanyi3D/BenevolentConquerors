@@ -62,7 +62,7 @@ main {
     border-radius: 10px;
     padding: 2rem;
     width: 500px;
-    height: 900px;
+   
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
@@ -93,11 +93,38 @@ main {
     padding-top: 1rem;
  }
 
+ .initiatives-card::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 40%;
+  margin: 1rem auto 0;
+  background: #28bce1;
+  border-radius: 10px;
+}
+
  
 
   @media(max-width:768px){
-    .initiatives-container{
-        flex-direction: column;
-        align-items: center;
-    }
+     .initiatives-container {
+    padding: 2rem 1.5rem;
+    gap: 2rem;
   }
+
+  .initiatives-card {
+    padding: 1.5rem;
+  }
+
+  .initiatives-card img {
+    height: 200px;
+  }
+
+  .initiative-title {
+    font-size: 1.6rem;
+  }
+
+  .initiative-description {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+}
